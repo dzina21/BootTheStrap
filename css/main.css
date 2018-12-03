@@ -1,0 +1,452 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 22, 2014, 8:27:04 PM
+    Author     : Brad
+*/
+@import url("https://fonts.googleapis.com/css?family=Exo+2:200,400,700");
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
+html {
+  font-size: 10px; }
+  @media (max-width: 767px) {
+    html {
+      font-size: 7px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    html {
+      font-size: 8px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    html {
+      font-size: 9px; } }
+  @media (min-width: 1200px) {
+    html {
+      font-size: 10px; } }
+
+body {
+  height: 100%;
+  padding-top: 50px;
+  font-size: 16px; }
+
+a {
+  color: rgb(2, 14, 20); }
+
+.navbar-default .navbar > li > a:hover, .navbar-default .navbar > li > a:focus,
+.navbar-default .navbar > .open > a, .navbar-default .navbar > .open > a:hover, .navbar-default .navbar > .open > a:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: rgb(68, 9, 9); }
+
+.navbar .navbar-brand {
+  opacity: .9; }
+  .navbar .navbar-brand .title {
+    font-family: "Russo One", sans-serif; }
+  .navbar .navbar-brand .subtitle {
+    font-family: "Exo 2", sans-serif;
+    font-weight: lighter; }
+  .navbar .navbar-brand:hover {
+    opacity: 1;
+    color: rgb(68, 9, 9); }
+
+a.btn:hover, a.btn:focus {
+  text-decoration: none; }
+
+.btn-primary {
+  background-color: #2b404a;
+  border: none; }
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: #476a7a;
+    text-decoration: none; }
+
+.btn-default {
+  border-radius: 0; }
+
+h2, h3 {
+  color: #5a707a; }
+
+h3 {
+  font-weight: 200;
+  color: black; }
+
+.navbar-default, .navbar-collapse {
+  background-color: #2b404a;
+  border: none; }
+
+.navbar-default .navbar-toggle {
+  border: none; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white; }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.15); }
+
+@media (max-width: 350px) {
+  .navbar-brand > span {
+    display: none; }
+  #top_section_first_row {
+    width: 100%; } }
+
+#site_wrapper {
+  width: 100%;
+  height: 100%; }
+
+.container_vertical_align_wrapper, section_viewport_height {
+  display: table;
+  width: 100%;
+  height: 100%;
+  /* For at least Firefox */
+  min-height: 100%; }
+
+.container_vertical_align_wrapper > .container_vertical_align_inner {
+  display: table-cell;
+  vertical-align: middle; }
+
+.navbar > li > a.navbar-icononly {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.navbar-icononly > span {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  font-size: 24px; }
+
+#canvasmainanimation {
+  width: 100%;
+  max-width: 720px; }
+
+#SwissArmyBrad {
+  text-align: center; }
+
+/* columns of same height styles, courtesy of Minimit.com */
+.container-xs-height {
+  display: table;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.row-xs-height {
+  display: table-row; }
+
+.col-xs-height {
+  display: table-cell;
+  float: none; }
+
+@media (min-width: 768px) {
+  .container-sm-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px; }
+  .row-sm-height {
+    display: table-row; }
+  .col-sm-height {
+    display: table-cell;
+    float: none; } }
+
+@media (min-width: 992px) {
+  .container-md-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px; }
+  .row-md-height {
+    display: table-row; }
+  .col-md-height {
+    display: table-cell;
+    float: none; } }
+
+@media (min-width: 1200px) {
+  .container-lg-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px; }
+  .row-lg-height {
+    display: table-row; }
+  .col-lg-height {
+    display: table-cell;
+    float: none; } }
+
+@media (max-width: 991px) {
+  .row-sm-height {
+    margin-bottom: 4em; } }
+
+/* firefox fix */
+.img-responsive {
+  width: 100%; }
+
+/* vertical alignment styles */
+.col-top {
+  vertical-align: top; }
+
+.col-middle {
+  vertical-align: middle; }
+
+.col-bottom {
+  vertical-align: bottom; }
+
+/* Glyph Icons Custom */
+.glyph {
+  height: 1em;
+  width: 1em;
+  line-height: 1em;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-left: 1.25em; }
+  .glyph.arrow-down, .glyph.arrow-right {
+    background-image: url(/img/glyph-arrow-down.svg); }
+  .glyph.arrow-right {
+    transform: rotate(-90deg); }
+
+/* UNNEEDED make a div scale up while maintiaing aspect ratio
+#knife_animation_wrapper {
+    position:relative;
+    width:100%;
+    border-color:red;
+    border-width: 4px;
+    border-style:dashed;
+    padding-bottom:81.5%;
+}
+*/
+#first_section {
+  position: relative;
+  min-height: 70rem; }
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-size: 120rem 67.5rem;
+  background-position: 50% 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url(/img/BG-hero-image.svg);
+  background-repeat: no-repeat; }
+
+.hero-loop-left,
+.hero-loop-right {
+  background: url(/img/BG-hero-loop-left.svg);
+  left: 0;
+  height: 100%;
+  top: 0;
+  right: calc(50% + 60rem - 1px);
+  position: absolute;
+  background-repeat: repeat-x;
+  background-size: 114.3rem;
+  background-position: 100% 0; }
+
+.hero-loop-right {
+  background: url(/img/BG-hero-loop-right.svg);
+  left: calc(50% + 60rem - 1px);
+  right: 0;
+  background-repeat: repeat-x;
+  background-size: 108.4rem;
+  background-position: 0 0; }
+
+.home section:not(:first-child) {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.hero-button {
+  border-radius: 0;
+  margin-top: 6rem;
+  text-align: center; }
+
+#top_section_container {
+  text-align: center; }
+
+#top_section_first_row {
+  position: relative;
+  display: inline-block;
+  top: 35rem;
+  text-align: center;
+  line-height: 1; }
+
+.logo {
+  text-align: right;
+  color: #262626; }
+  .logo h1 {
+    font-family: "Russo One";
+    font-size: 6.95rem;
+    margin-bottom: 0; }
+  .logo p {
+    font-size: 2.75rem;
+    margin-right: 1.6rem; }
+
+@media (max-width: 1050px) {
+  #first_section {
+    background-size: 120rem; }
+  #top_section_first_row {
+    top: 35rem; } }
+
+#top_section_second_row {
+  height: 40%;
+  box-sizing: border-box; }
+
+@media (min-height: 580px) {
+  #top_section_second_row {
+    height: 30%; } }
+
+@media (max-height: 400px) {
+  #top_section_first_row {
+    height: 50%; } }
+
+#top_section_second_row div {
+  box-sizing: border-box;
+  padding-bottom: 40px; }
+
+#first_col {
+  height: 100%; }
+
+.home .about {
+  margin-top: 15rem;
+  margin-bottom: 15rem; }
+  .home .about .aboutmetext {
+    margin-top: 2em; }
+    @media (min-width: 992px) {
+      .home .about .aboutmetext {
+        height: 50vh; } }
+
+/* RESUME.html */
+.resume .page-header .title {
+  font-family: "Russo One";
+  color: #262626; }
+
+#resume_primary_column section h3 {
+  margin-top: 40px; }
+
+#resume_primary_column section > div > h3 {
+  margin-top: 20px; }
+
+#resume_primary_column img {
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 35px; }
+
+@media only print {
+  .progress {
+    display: none; }
+  #skills-list {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    padding: 0; } }
+
+/* Work  */
+.portfolio .project-name {
+  font-weight: normal; }
+
+.portfolio .htmltagwrap-logo {
+  max-height: 100px; }
+
+@media (min-width: 768px) {
+  .portfolio .software-skills {
+    list-style-type: square !important;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3; } }
+
+.portfolio .subnavbar {
+  margin-left: -15px; }
+
+@media (max-width: 767px) {
+  .portfolio img {
+    max-width: 100%; } }
+
+@media (min-width: 992px) {
+  .portfolio .lead {
+    width: 445px; } }
+
+.portfolio .logo {
+  max-width: 350px;
+  margin-bottom: 10px; }
+
+.portfolio #work button {
+  margin-bottom: 40px; }
+
+.borderless_picture {
+  margin-bottom: 40px; }
+
+#owl-slider-01 {
+  width: 560px;
+  height: 400px;
+  display: block; }
+
+.box_shadow {
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.25);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.25);
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.25); }
+
+/* Portfolio Subnav Bar */
+.subnavbar_fixed {
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  z-index: 50;
+  border-bottom: 2px;
+  border-bottom-color: lightgray;
+  border-bottom-style: solid; }
+
+.caption {
+  font-size: 14px; }
+
+.powerpoint-embed-container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+.powerpoint-embed {
+  height: 0;
+  padding-bottom: 59%;
+  overflow: hidden;
+  position: relative; }
+
+.powerpoint-embed > iframe {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute; }
+
+.carousel {
+  box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 5px; }
+
+.carousel .carousel-control,
+.carousel .carousel-indicators {
+  opacity: 0;
+  color: black;
+  transition: display .25s; }
+
+.carousel:hover .carousel-control,
+.carousel:hover .carousel-indicators {
+  opacity: .5; }
+
+.carousel:hover .carousel-indicators {
+  filter: invert; }
+
+.wingman.carousel {
+  margin-bottom: 5em; }
+
+/* VS Code */
+.vscode .name {
+  font-weight: bold; }
+
+.vscode .persona-photo {
+  width: 200px;
+  float: left; }
+
+.preface_image_container {
+  margin-top: -2px; }
+
+.preface_png {
+  margin: auto;
+  width: 1024px;
+  display: block;
+  user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
